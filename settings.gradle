@@ -1,0 +1,2 @@
+rootProject.name = "Project Skripsi 2"
+include ':app'

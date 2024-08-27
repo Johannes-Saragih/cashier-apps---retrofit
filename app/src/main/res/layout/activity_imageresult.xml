@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="18dp"
+        android:background="@drawable/background2"
+        android:foreground="@drawable/cardshape3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/tvimage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/backgroundputih"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            app:cornerRadius="8dp"
+            android:layout_below="@id/tvimage"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="@color/white"
+            android:text="Deteksi"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/reload"
+            app:layout_constraintTop_toBottomOf="@+id/tvimage" />
+
+        <Button
+            android:id="@+id/reload"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/bluedark"
+            app:cornerRadius="8dp"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textStyle="bold"
+            android:text="Ulang"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:textColor="@color/bluedark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/send"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvimage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
