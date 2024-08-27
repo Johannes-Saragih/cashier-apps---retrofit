@@ -20,7 +20,7 @@ class ApiConfig {
                 .addInterceptor(loggingInterceptor)
                 .build()
             val retrofit = Retrofit.Builder()
-                .baseUrl("https://ml.zaws.net/")
+                .baseUrl("your-token")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
