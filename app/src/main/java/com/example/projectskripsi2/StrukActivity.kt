@@ -282,17 +282,6 @@ class StrukActivity : AppCompatActivity(){
         return total
     }
 
-    private fun uiKitDetails(transactionRequest: TransactionRequest) {
-        val customerDetails = CustomerDetails().apply {
-            customerIdentifier = "Johannes Saragih"
-            phone = "087869951286"
-            firstName = "Johannes"
-            lastName = "Saragih"
-            email = "johannessaragih@gmail.com"
-        }
-        transactionRequest.customerDetails = customerDetails
-    }
-
     private fun handleTransactionResult(transactionResult: TransactionResult) {
         when {
             transactionResult.response != null -> {
