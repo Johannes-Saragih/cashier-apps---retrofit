@@ -140,9 +140,9 @@ class StrukActivity : AppCompatActivity(){
 
     private fun initMidtransSDK() {
         val sdkUIFlowBuilder: SdkUIFlowBuilder = SdkUIFlowBuilder.init()
-            .setClientKey("SB-Mid-client-rbE92L0IXyY636eJ")
+            .setClientKey("your-client-key")
             .setContext(applicationContext)
-            .setMerchantBaseUrl("https://ml.zaws.net/")
+            .setMerchantBaseUrl("your-base-url")
             .setTransactionFinishedCallback(TransactionFinishedCallback {
                 if (TransactionResult.STATUS_SUCCESS == "success") {
                     navigateToMainActivity()
